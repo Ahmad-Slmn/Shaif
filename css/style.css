@@ -721,7 +721,7 @@ button:active {
     }
 
     #header .nav-list ul a::after {
-        font-size: 10rem
+        font-size: 7rem
     }
 }
 
