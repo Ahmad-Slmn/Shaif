@@ -280,8 +280,7 @@ button:active {
     font-size: 4rem;
     position: relative;
     color: transparent;
-    animation: text_reveal ease-in-out var(--transition) forwards;
-    /*    animation-delay: 1s*/
+    animation: text_reveal ease-in-out var(--transition) forwards
 }
 
 #hero h1:nth-child(1) {
@@ -701,25 +700,52 @@ button:active {
 
 
 /* Start My Media Query For Tablet */
-@media(max-width:767px){
-    #services .service-item{
+
+@media(max-width:450px) {
+
+    #header .hamburger {
+        margin-right: 0
+    }
+
+    p {
+        font-size: 10px;
+        letter-spacing: normal;
+        font-weight: normal;
+        line-height: 1.7
+    }
+
+    #about .about,
+    #projects .projects,
+    #header .nav-bar {
+        padding: 0
+    }
+
+    #header .nav-list ul a::after {
+        font-size: 10rem
+    }
+}
+
+@media(max-width:767px) {
+    #services .service-item {
         flex-basis: 100%
     }
-    
-    #projects .project-item{
+
+    #projects .project-item {
         width: 90%
     }
-    
-    #contact .contact-items{
+
+    #contact .contact-items {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column
     }
-    #contact .contact-item{
+
+    #contact .contact-item {
         width: 100%
     }
 }
+
 @media only screen and (min-width: 768px) {
     .cta {
         font-size: 2.5rem;
